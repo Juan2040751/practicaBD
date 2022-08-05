@@ -8,7 +8,7 @@ const helloRouter = require('./routes/hello');
 const indexRouter = require('./routes/index');
 const crearRouter = require('./routes/crear');
 
-const queryRouter = require('./routes/query');
+const queryRouter = require('./views/query');
 const mascotaRouter = require('./routes/mascotas');
 
 const app = express();

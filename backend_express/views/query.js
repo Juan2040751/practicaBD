@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const connect = require('./db_pool_connect');
+const connect = require('../routes/db_pool_connect');
 
 /* GET execute a give query. */
 router.get('/', function (req, res, next) {
