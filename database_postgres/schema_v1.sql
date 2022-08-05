@@ -24,11 +24,13 @@ CREATE TABLE Pet(
 	pet_id SERIAL PRIMARY KEY,
 	pet_name VARCHAR(60),
 	age INT,
+    ptype_id INT,
     FOREIGN KEY(ptype_id) REFERENCES Ptype(ptype_id)
 );
 CREATE TABLE Toy(
 	toy_id SERIAL PRIMARY KEY,
 	toy_name VARCHAR(60),
 	color VARCHAR(60),
+    pet_id INT,
     FOREIGN KEY(pet_id) REFERENCES Pet(pet_id)
 );
